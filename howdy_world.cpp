@@ -9,3 +9,4 @@ void main()
 
 }
 //doing nothing
+//комментарий на русском
