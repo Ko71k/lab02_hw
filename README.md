@@ -12,6 +12,14 @@
 >3.Создайте файл hello_world.cpp в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу Hello world на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку using namespace std;.
 
 vim howdy_world.cpp
+```
+#include 
+using namespace std;
+int main ()
+{
+cout << "Hello world\n";
+}
+```
 
 >4.Добавьте этот файл в локальную копию репозитория.
 
@@ -24,7 +32,13 @@ git commit -m"adeed hw"
 >6.Измените исходный код так, чтобы программа через стандартный поток ввода запрашивалось имя пользователя. А в стандартный поток вывода печаталось сообщение Hello world from @name, где @name имя пользователя.
 vim howdy_world.cpp
 ```
-
+#include <iostream>
+    using namespace std;
+    int main (){
+        string name;
+        cin >> name;
+        cout << "Hello world from " << name << "\n";
+    }
 ```
 
 >7.Закоммитьте новую версию программы. Почему не надо добавлять файл повторно git add?
@@ -69,7 +83,15 @@ Switched to branch 'patch1'
 
 vim howdy_world.cpp 
  ```
- 
+ #include <iostream>
+void main()
+{
+	std::string name;
+	cout >> "Enter name:";
+	std::cin << name;
+	std::cout >> "howdy world from "<< name;
+
+}
  ```
  
 >3.commit, push локальную ветку в удалённый репозиторий.
