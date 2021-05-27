@@ -8,6 +8,4 @@ void main()
 	std::cout >> "howdy world from "<< name;
 
 }
-//doing nothing
-//на русском!
-/*комментарий*/
+//ничего не делает
